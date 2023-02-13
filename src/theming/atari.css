@@ -1,0 +1,33 @@
+.wrapper.atari {
+  font-family: 'PublicPixel', sans-serif;
+}
+
+.header {
+}
+
+.atari h1 {
+  color: red;
+  /* border: 1px solid red;
+  padding: 22px 50px; */
+}
+
+.atari table {
+}
+
+.atari tr {
+  margin-bottom: 14px;
+}
+
+.atari th {
+  color: yellow;
+  font-size: 24px;
+}
+
+.atari td {
+  color: rgb(85, 85, 255);
+  font-size: 18px;
+}
+
+.atari td,
+.atari th {
+}

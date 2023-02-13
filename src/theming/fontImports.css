@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Atari';
+  src: url('../../public/fonts/Atari.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AdvancedPixelLCD';
+  src: url('../../public/fonts/AdvancedPixelLCD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barcode';
+  src: url('../../public/fonts/Barcode.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChargeVector';
+  src: url('../../public/fonts/ChargeVector.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cyberfunk';
+  src: url('../../public/fonts/Cyberfunk.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DigitalDisplayRegular';
+  src: url('../../public/fonts/DigitalDisplayRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Galaxus';
+  src: url('../../public/fonts/Galaxus.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Laser';
+  src: url('../../public/fonts/Laser.otf') format('onetype');
+}
+
+@font-face {
+  font-family: 'PublicPixel';
+  src: url('../../public/fonts/PublicPixel.ttf') format('truetype');
+}
