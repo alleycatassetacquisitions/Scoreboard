@@ -26,8 +26,8 @@ Page should open on `http://localhost:3000/`
 
 ### Insp:
 
-[https://codepen.io/tomni/pen/xxYNEj]
-(https://codepen.io/melzshawn1998/pen/xxdwORB) [https://codepen.io/melzshawn1998/pen/xxdwORB]
+[https://codepen.io/tomni/pen/xxYNEj](https://codepen.io/tomni/pen/xxYNEj)
+(https://codepen.io/melzshawn1998/pen/xxdwORB)[https://codepen.io/melzshawn1998/pen/xxdwORB]
 (https://codepen.io/mattgrosswork/pen/VwprebG) [https://codepen.io/mattgrosswork/pen/VwprebG]
 (https://codepen.io/cbanlawi/pen/xxRBeMY) [https://codepen.io/cbanlawi/pen/xxRBeMY]
 (https://codepen.io/acupoftee/pen/WNbBxXq) [https://codepen.io/acupoftee/pen/WNbBxXq]
