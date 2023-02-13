@@ -15,7 +15,7 @@ type TableItemType = {
 const TableItem: FC<TableItemType> = ({ data, rank }: TableItemType) => {
   return (
     <tr className="dataRow">
-      <td style={{ textAlign: 'right' }}>{rank}</td>
+      <td style={{ textAlign: 'right' }}>{rank}:</td>
       {/* <td>{data.id}</td> */}
       <td>{data.name}</td>
       <td>{data.score}</td>

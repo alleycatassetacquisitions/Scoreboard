@@ -1,16 +1,24 @@
 import TableItem from 'components/TableItem/TableItem';
 import React, { useEffect, useState } from 'react';
 import './theming/fontImports.css';
-import './theming/atari.css';
+import './theming/Atari.css';
+import './theming/PublicPixel.css';
+import './theming/Galaxus.css';
 import './App.css';
 
-// import { data } from 'public/data.json';
-
-const themes = ['atari'];
+const themes = ['Atari', 'PublicPixel'];
 
 function App() {
   const [scoreData, setscoreData] = useState([]);
-  const [currentTheme, setcurrentTheme] = useState('atari');
+  const [currentTheme, setcurrentTheme] = useState('Atari');
+
+  const switchTheme = (e: any) => {
+    if (e.keyCode === 13) {
+      const newIndex = Math.floor(Math.random() * themes.length);
+      setcurrentTheme(themes[newIndex]);
+      console.log('Theme CHnged to: ' + themes[newIndex]);
+    }
+  };
 
   const getScoreboardData = () => {
     fetch('data.json', {
@@ -32,7 +40,11 @@ function App() {
   }, []);
 
   return (
-    <div className={`wrapper ` + currentTheme}>
+    <div
+      className={`wrapper ` + currentTheme}
+      tabIndex={-1}
+      onKeyDown={switchTheme}
+    >
       <div className="header">
         <h1>Top Hunters</h1>
       </div>

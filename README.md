@@ -22,6 +22,7 @@ Currently working on:
 TODO:
 
 1. Check with Zach about if RasberryPI will be able to open the json file, filter or find an object based on ID, increment the score and then re-save.
+2. Add sorting logic for the ranks to be correct. All in due time
 
 Potential Themes:
 https://codepen.io/tomni/pen/xxYNEj
