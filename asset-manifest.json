@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Scoreboard/static/css/main.76c464ff.css",
+    "main.css": "/Scoreboard/static/css/main.943480d3.css",
     "main.js": "/Scoreboard/static/js/main.a78327ee.js",
     "static/media/Atari.ttf": "/Scoreboard/static/media/Atari.087082f9965307725144.ttf",
     "static/media/Inconsolata-Regular.ttf": "/Scoreboard/static/media/Inconsolata-Regular.54748073d423bc6646f7.ttf",
@@ -13,11 +13,11 @@
     "static/media/Cyberfunk.ttf": "/Scoreboard/static/media/Cyberfunk.a36bc92e035523e0d825.ttf",
     "static/media/DigitalDisplayRegular.ttf": "/Scoreboard/static/media/DigitalDisplayRegular.f6dd6680475ed7760a09.ttf",
     "index.html": "/Scoreboard/index.html",
-    "main.76c464ff.css.map": "/Scoreboard/static/css/main.76c464ff.css.map",
+    "main.943480d3.css.map": "/Scoreboard/static/css/main.943480d3.css.map",
     "main.a78327ee.js.map": "/Scoreboard/static/js/main.a78327ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.76c464ff.css",
+    "static/css/main.943480d3.css",
     "static/js/main.a78327ee.js"
   ]
 }
