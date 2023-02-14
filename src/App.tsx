@@ -5,11 +5,12 @@ import './theming/Atari.css';
 import './theming/PublicPixel.css';
 import './theming/Galaxus.css';
 import './App.css';
+import { returnSortedArrayOfObjects } from 'utils/funcs';
 
 const themes = ['Atari', 'PublicPixel'];
 
 function App() {
-  const [scoreData, setscoreData] = useState([]);
+  const [scoreData, setscoreData] = useState<any[]>([]);
   const [currentTheme, setcurrentTheme] = useState('Atari');
 
   const switchTheme = (e: any) => {
@@ -31,7 +32,8 @@ function App() {
         return response.json();
       })
       .then(function (myJson) {
-        setscoreData(myJson);
+        let sortedArr = returnSortedArrayOfObjects(myJson);
+        setscoreData(sortedArr);
       });
   };
 

@@ -6,3 +6,9 @@ export type CompPropsWithChildrenAndStyles = {
 export type CompPropsWithOnClick = {
   onClick?: (params?: any) => any;
 };
+
+export type itemType = {
+  id: string;
+  name: string;
+  score: number;
+};

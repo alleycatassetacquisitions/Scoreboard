@@ -1,11 +1,6 @@
 import React, { FC } from 'react';
+import { itemType } from 'types';
 import './TableItem.css';
-
-type itemType = {
-  id: string;
-  name: string;
-  score: number;
-};
 
 type TableItemType = {
   data: itemType;
