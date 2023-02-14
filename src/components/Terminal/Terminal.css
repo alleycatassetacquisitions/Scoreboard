@@ -1,0 +1,52 @@
+.Terminal .terminal_wrapper .terminal_header {
+  font-size: 20px;
+  color: cyan;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.Terminal .terminal_wrapper {
+  color: green;
+  font-family: 'Inconsolata', sans-serif;
+  padding-left: 5px;
+}
+
+.Terminal ul {
+  list-style: none;
+  margin: 0 !important;
+  padding-left: 0px;
+  padding-top: 10px;
+}
+
+.Terminal li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.new_line {
+  margin-right: 10px;
+}
+
+.rank {
+  margin-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.score {
+  font-size: 14px;
+}
+
+.squares_wrapper {
+  display: inline-flex;
+}
+
+.square {
+  display: flex;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  margin-right: 4px;
+}

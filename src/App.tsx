@@ -9,9 +9,9 @@ import './App.css';
 import { returnSortedArrayOfObjects } from 'utils/funcs';
 import DefaultTable from 'components/DefaultTable/DefaultTable';
 import GlitchTable from 'components/GlitchTable/GlitchTable';
-import GlitchTable2 from 'components/GlitchTable2/GlitchTable2';
+import Terminal from 'components/Terminal/Terminal';
 
-const themes = ['Atari', 'PublicPixel', 'Glitch1', 'Glitch2'];
+const themes = ['Atari', 'PublicPixel', 'Glitch1', 'Glitch2', 'Terminal'];
 
 const getNewTheme = () => {
   const newIndex = Math.floor(Math.random() * themes.length);
@@ -65,15 +65,17 @@ function App() {
     >
       {/* <div className="scanlines"></div> */}
       <div className="header">
-        <h1 className="glitch" data-text="Top Hunters">
-          Top Hunters
-        </h1>
+        {currentTheme !== 'Terminal' && (
+          <h1 className="glitch" data-text="Top Hunters">
+            Top Hunters
+          </h1>
+        )}
       </div>
 
-      {currentTheme === 'Glitch1' ? (
+      {currentTheme === 'Glitch1' || currentTheme === 'Glitch2' ? (
         <GlitchTable data={scoreData}></GlitchTable>
-      ) : currentTheme === 'Glitch2' ? (
-        <GlitchTable2 data={scoreData}></GlitchTable2>
+      ) : currentTheme === 'Terminal' ? (
+        <Terminal data={scoreData}></Terminal>
       ) : (
         <DefaultTable data={scoreData}></DefaultTable>
       )}
