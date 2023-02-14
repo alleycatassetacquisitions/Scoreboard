@@ -1,4 +1,3 @@
-import TableItem from 'components/DefaultTable/TableItem/TableItem';
 import React, { useEffect, useState } from 'react';
 import './theming/fontImports.css';
 import './theming/Atari.css';
