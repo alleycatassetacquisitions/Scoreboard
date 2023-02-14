@@ -5,26 +5,33 @@ import './theming/Atari.css';
 import './theming/PublicPixel.css';
 import './theming/Galaxus.css';
 import './theming/Glitch1.css';
+import './theming/Glitch2.css';
 import './App.css';
 import { returnSortedArrayOfObjects } from 'utils/funcs';
 import DefaultTable from 'components/DefaultTable/DefaultTable';
 import GlitchTable from 'components/GlitchTable/GlitchTable';
+import GlitchTable2 from 'components/GlitchTable2/GlitchTable2';
 
-const themes = ['Atari', 'PublicPixel', 'Glitch1'];
+const themes = ['Atari', 'PublicPixel', 'Glitch1', 'Glitch2'];
+
+const getNewTheme = () => {
+  const newIndex = Math.floor(Math.random() * themes.length);
+  console.log('Theme changing to: ' + themes[newIndex]);
+  return themes[newIndex];
+};
 
 function App() {
   const [scoreData, setscoreData] = useState<any[]>([]);
-  const [currentTheme, setcurrentTheme] = useState('Atari');
+  const [currentTheme, setcurrentTheme] = useState('Glitch2');
 
   const switchTheme = (e: any) => {
     if (e.keyCode === 13) {
-      const newIndex = Math.floor(Math.random() * themes.length);
-      setcurrentTheme(themes[newIndex]);
-      console.log('Theme CHnged to: ' + themes[newIndex]);
+      setcurrentTheme(getNewTheme());
     }
   };
 
   const getScoreboardData = () => {
+    console.log('Get data');
     fetch('data.json', {
       headers: {
         'Content-Type': 'application/json',
@@ -42,6 +49,13 @@ function App() {
 
   useEffect(() => {
     getScoreboardData();
+
+    const interval = setInterval(() => {
+      console.log('Logs every 10 seconds');
+      // setcurrentTheme(getNewTheme());
+    }, 10000);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -59,6 +73,8 @@ function App() {
 
       {currentTheme === 'Glitch1' ? (
         <GlitchTable data={scoreData}></GlitchTable>
+      ) : currentTheme === 'Glitch2' ? (
+        <GlitchTable2 data={scoreData}></GlitchTable2>
       ) : (
         <DefaultTable data={scoreData}></DefaultTable>
       )}
