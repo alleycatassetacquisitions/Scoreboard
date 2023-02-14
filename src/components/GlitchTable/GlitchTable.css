@@ -11,20 +11,9 @@
   background: black;
   overflow: hidden;
   top: 0;
-  animation: noise-1 20s linear infinite alternate-reverse,
+  animation: noise-1 30s linear infinite alternate-reverse,
     glitch 5s 5.05s infinite;
 }
-
-/* .glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -5px 0 lightgreen;
-  background: black;
-  overflow: hidden;
-  top: 0;
-  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
-} */
 
 @keyframes glitch {
   1% {
