@@ -11,7 +11,7 @@ type TerminalType = {
 const Terminal: FC<TerminalType> = ({ data }) => {
   return (
     <div className="terminal_wrapper">
-      <div className="terminal_header">$~ Top_Hunters</div>
+      <div className="terminal_header">$~: ls -a Top_Hunters</div>
       <ul>
         {data.map((item, i) => {
           return <TerminalItem key={i} data={item} rank={i + 1}></TerminalItem>;

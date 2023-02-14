@@ -21,7 +21,7 @@ const getNewTheme = () => {
 
 function App() {
   const [scoreData, setscoreData] = useState<any[]>([]);
-  const [currentTheme, setcurrentTheme] = useState('Glitch2');
+  const [currentTheme, setcurrentTheme] = useState('Terminal');
 
   const switchTheme = (e: any) => {
     if (e.keyCode === 13) {
@@ -64,13 +64,13 @@ function App() {
       onKeyDown={switchTheme}
     >
       {/* <div className="scanlines"></div> */}
-      <div className="header">
-        {currentTheme !== 'Terminal' && (
+      {currentTheme !== 'Terminal' && (
+        <div className="header">
           <h1 className="glitch" data-text="Top Hunters">
             Top Hunters
           </h1>
-        )}
-      </div>
+        </div>
+      )}
 
       {currentTheme === 'Glitch1' || currentTheme === 'Glitch2' ? (
         <GlitchTable data={scoreData}></GlitchTable>
