@@ -17,7 +17,7 @@
   /* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */
   clip: rect(44px, 450px, 56px, 0);
   /* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */
-  animation: glitch-anim 10s infinite linear alternate-reverse;
+  animation: glitch-anim 6s infinite linear alternate-reverse;
 }
 .Glitch2 .glitch::after {
   content: attr(data-text);
