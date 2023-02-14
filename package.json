@@ -2,6 +2,7 @@
   "name": "neo-scoreboard",
   "version": "0.1.0",
   "main": "src/index.tsx",
+  "homepage": "https://alleycatassetacquisitions.github.io/Scoreboard",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "lodash": "^4.17.21",

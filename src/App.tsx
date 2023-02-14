@@ -1,13 +1,16 @@
-import TableItem from 'components/TableItem/TableItem';
+import TableItem from 'components/DefaultTable/TableItem/TableItem';
 import React, { useEffect, useState } from 'react';
 import './theming/fontImports.css';
 import './theming/Atari.css';
 import './theming/PublicPixel.css';
 import './theming/Galaxus.css';
+import './theming/Glitch1.css';
 import './App.css';
 import { returnSortedArrayOfObjects } from 'utils/funcs';
+import DefaultTable from 'components/DefaultTable/DefaultTable';
+import GlitchTable from 'components/GlitchTable/GlitchTable';
 
-const themes = ['Atari', 'PublicPixel'];
+const themes = ['Atari', 'PublicPixel', 'Glitch1'];
 
 function App() {
   const [scoreData, setscoreData] = useState<any[]>([]);
@@ -47,25 +50,18 @@ function App() {
       tabIndex={-1}
       onKeyDown={switchTheme}
     >
+      {/* <div className="scanlines"></div> */}
       <div className="header">
-        <h1>Top Hunters</h1>
+        <h1 className="glitch" data-text="Top Hunters">
+          Top Hunters
+        </h1>
       </div>
 
-      <table>
-        <thead>
-          <tr className="headerRow">
-            <th>Rank</th>
-            {/* <th>Ident</th> */}
-            <th>Hunter</th>
-            <th>Captures</th>
-          </tr>
-        </thead>
-        <tbody>
-          {scoreData.map((item, i) => {
-            return <TableItem key={i} data={item} rank={i + 1}></TableItem>;
-          })}
-        </tbody>
-      </table>
+      {currentTheme === 'Glitch1' ? (
+        <GlitchTable data={scoreData}></GlitchTable>
+      ) : (
+        <DefaultTable data={scoreData}></DefaultTable>
+      )}
     </div>
   );
 }

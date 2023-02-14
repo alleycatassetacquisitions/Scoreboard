@@ -42,3 +42,8 @@
   font-family: 'PublicPixel';
   src: url('../../public/fonts/PublicPixel.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../../public/fonts/Inconsolata-Regular.ttf') format('truetype');
+}
