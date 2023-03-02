@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Scoreboard/static/css/main.dde6394b.css",
-    "main.js": "/Scoreboard/static/js/main.563f9144.js",
+    "main.css": "/Scoreboard/static/css/main.88443f18.css",
+    "main.js": "/Scoreboard/static/js/main.9b896526.js",
     "static/media/Atari.ttf": "/Scoreboard/static/media/Atari.087082f9965307725144.ttf",
     "static/media/Inconsolata-Regular.ttf": "/Scoreboard/static/media/Inconsolata-Regular.54748073d423bc6646f7.ttf",
     "static/media/PublicPixel.ttf": "/Scoreboard/static/media/PublicPixel.f99b94ee4c84a5e45373.ttf",
@@ -13,11 +13,11 @@
     "static/media/Cyberfunk.ttf": "/Scoreboard/static/media/Cyberfunk.a36bc92e035523e0d825.ttf",
     "static/media/DigitalDisplayRegular.ttf": "/Scoreboard/static/media/DigitalDisplayRegular.f6dd6680475ed7760a09.ttf",
     "index.html": "/Scoreboard/index.html",
-    "main.dde6394b.css.map": "/Scoreboard/static/css/main.dde6394b.css.map",
-    "main.563f9144.js.map": "/Scoreboard/static/js/main.563f9144.js.map"
+    "main.88443f18.css.map": "/Scoreboard/static/css/main.88443f18.css.map",
+    "main.9b896526.js.map": "/Scoreboard/static/js/main.9b896526.js.map"
   },
   "entrypoints": [
-    "static/css/main.dde6394b.css",
-    "static/js/main.563f9144.js"
+    "static/css/main.88443f18.css",
+    "static/js/main.9b896526.js"
   ]
 }
