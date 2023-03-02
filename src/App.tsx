@@ -54,7 +54,7 @@ function App() {
       <div className="left">
         <div className="header">
           <h1 className="glitch" data-text="Top Hunters">
-            Top Hunters
+            Hunters
           </h1>
         </div>
 
@@ -83,7 +83,7 @@ function App() {
           data={bountyScoreData}
           rankName="Rank"
           name="Bounty Ident"
-          score="Escapes"
+          score="Evasions"
         ></FlickerTable>
       </div>
     </div>
