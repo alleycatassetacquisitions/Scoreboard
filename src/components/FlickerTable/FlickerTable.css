@@ -10,7 +10,7 @@
   display: flex;
   width: 100%;
   flex: 0 1 auto;
-  margin-bottom: 5px;
+  padding: 5px 0px;
   position: relative;
 }
 
@@ -26,6 +26,10 @@ div:not(.scrollingArea_wrapper) > .table_row:nth-child(1) {
   position: relative;
 }
 
+.table_row:nth-child(2n) {
+  background-color: #111111;
+}
+
 .table_data {
   display: flex;
   padding: 0 10px;
@@ -39,11 +43,11 @@ div:not(.scrollingArea_wrapper) > .table_row:nth-child(1) {
   justify-content: flex-end;
 }
 .table_data:nth-child(2) {
-  flex-basis: 55%;
+  flex-basis: 60%;
   justify-content: center;
 }
 .table_data:nth-child(3) {
-  flex-basis: 30%;
+  flex-basis: 25%;
   justify-content: flex-start;
 }
 
@@ -54,6 +58,7 @@ div:not(.scrollingArea_wrapper) > .table_row:nth-child(1) {
   overflow: hidden;
   margin-top: 5px;
   padding-top: 10px;
+  border-top: 2px solid rgb(100, 100, 100);
 }
 .scrollingArea_wrapper {
   position: absolute;
