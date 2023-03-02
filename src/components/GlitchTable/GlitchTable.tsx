@@ -6,23 +6,24 @@ import './GlitchTable.css';
 
 type GlitchTableType = {
   data: itemType[];
+  rankName: string;
+  name: string;
+  score: string;
 };
 
-const GlitchTable: FC<GlitchTableType> = ({ data }) => {
-  console.log('Inspired by https://codepen.io/acupoftee/pen/WNbBxXq');
+const GlitchTable: FC<GlitchTableType> = ({ data, rankName, name, score }) => {
   return (
     <table>
       <thead>
         <tr className="headerRow">
-          <th className="glitch" data-text="Rank">
-            Rank
+          <th className="glitch" data-text={rankName}>
+            {rankName}
           </th>
-          {/* <th>Ident</th> */}
-          <th className="glitch" data-text="Hunter">
-            Hunter
+          <th className="glitch" data-text={name}>
+            {name}
           </th>
-          <th className="glitch" data-text="Captures">
-            Captures
+          <th className="glitch" data-text={score}>
+            {score}
           </th>
         </tr>
       </thead>
